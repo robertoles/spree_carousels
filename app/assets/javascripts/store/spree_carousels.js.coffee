@@ -2,6 +2,7 @@
 #= require jquery.carouFredSel-5.6.1
 
 $(document).bind('ready',->
+  console.log($('.carousel').length)
   $('.carousel').each((index, element) ->
     element = $(element)
     element.find('.carousel-listing').carouFredSel({

@@ -1,4 +1,4 @@
-<div class="carousels">
+<div class="carousels full-size-carousels">
 
   <% Spree::Taxonomy.published_carousels.each do |carousel| %>
 
@@ -9,7 +9,7 @@
       <div class="carousel-products">
         <%= render partial: 'products/products', locals: { products: carousel.products } %>
       </div>
-      <div class="clearfix" />
+      <div class="clearfix"></div>
       <a class="prev" href="#"><span>prev</span></a>
       <a class="next" href="#"><span>next</span></a>
     </div>
