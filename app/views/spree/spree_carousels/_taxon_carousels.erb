@@ -4,7 +4,8 @@
 
     <div class="carousel <%= carousel.style %>">
       <div class="carousel-title">
-        <%= carousel.name %>:
+        <span class="title"><%= carousel.name %>:</span>
+        <span class="view-all"><%= link_to t(:view_all), seo_url(carousel.root) %></span>
       </div>
       <div class="carousel-products">
         <%= render partial: 'spree/products/products', locals: { products: carousel.products } %>
