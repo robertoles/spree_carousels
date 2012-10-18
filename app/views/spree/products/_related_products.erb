@@ -1,0 +1,13 @@
+<div class="row vertical-margin">
+  <div class="carousel">
+    <div class="carousel-title">
+      Related Products
+    </div>
+    <div class="carousel-products">
+      <%= render partial: 'products/products', locals: {products: @product.related_products.map {|r| r.related_to }} %>
+    </div>
+    <div class="clearfix" />
+    <a class="prev" href="#"><span>prev</span></a>
+    <a class="next" href="#"><span>next</span></a>
+  </div>
+</div>
