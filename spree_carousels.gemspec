@@ -2,7 +2,7 @@
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'spree_carousels'
-  s.version     = '1.2.4'
+  s.version     = '1.2.5'
   s.summary     = 'Adds carousels to spree'
   s.description = 'Adds carousel functionality to spree homepage, based on taxons'
   s.required_ruby_version = '>= 1.9.2'
