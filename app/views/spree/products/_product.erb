@@ -7,6 +7,6 @@
       <div class="arrow-up"></div>
     </div>
     <%= link_to truncate(product.name, :length => 50), product, :class => 'info', :itemprop => "name", :title => product.name %>
-    <span class="price selling" itemprop="price"><%= number_to_currency product.price %></span>
+    <span class="price selling" itemprop="price"><%= money product.price %></span>
   </li>
 <% end %>
